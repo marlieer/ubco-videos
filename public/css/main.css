@@ -1,0 +1,48 @@
+body{
+    padding: 1em;
+    background-color: #F4FFF8;
+}
+h1{
+    text-align: center;
+    color: #1C3738;
+}
+h2{
+    color: #1C3738;
+}
+h3{
+    color: #4D4847;
+}
+
+footer{
+    color: #000F08;
+    text-align: center;
+    font-size: small;
+}
+.div-border{
+    border-top: lightslategrey solid 1pt;
+}
+.media-descr{
+    display: inline;
+}
+.padding{
+    padding: 2em;
+    margin: 2em;
+}
+.videos-list-row{
+    border-bottom: solid 1pt lightslategrey;
+    border-top: solid 1pt lightslategrey;
+    padding: 2em;
+    display: flex;
+    width: 100%;
+}
+.videos-list-table{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+.video-data {
+    font-size: 0.9em;
+}
+#div-videos-list{
+padding-top: 1em;
+}
