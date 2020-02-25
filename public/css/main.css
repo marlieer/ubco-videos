@@ -21,6 +21,10 @@ footer{
 .div-border{
     border-top: lightslategrey solid 1pt;
 }
+.highligh-button {
+    border: 1pt solid green;
+}
+
 .media-descr{
     display: inline;
 }

@@ -36,8 +36,8 @@ function likeVideo(v_id, u_id) {
         success: function () {
             let dislike_id = '#dislike_' + v_id;
             let like_id = '#like_' + v_id;
-            $(like_id).css({"border": "1px solid green"});
-            $(dislike_id).css({"border": "inherit"});
+            $(like_id).addClass('highlight-button');
+            $(dislike_id).removeClass('highlight-button');
         }
     });
 }
@@ -61,9 +61,8 @@ function dislikeVideo(v_id, u_id) {
         success: function () {
             let id = '#dislike_' + v_id;
             let like_id = '#like_' + v_id;
-            $(id).css({"border": "1px solid dark-red"});
-            $(like_id).css({"border": "inherit"});
-            // alert("Disliked");
+            $(id).addClass('highlight-button');
+            $(like_id).removeClass('highlight-button');
         }
     });
 }

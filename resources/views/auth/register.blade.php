@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row">
@@ -61,15 +60,29 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="consent" class="col-md-4 control-label">By registering you agree to the
-
-                                <a href="{{ asset('Consent-student-general.pdf') }}">Terms & Services</a>
-                            </label>
-
-                            <div class="col-md-6">
-                                <input id="consent" type="checkbox" name="consent" required>I agree<br/>
-                            </div>
+                        <div class="form-group" style="padding: 1em;">
+                            <p>
+                                I have read <a href="{{ asset('Consent-student-general.pdf') }}" target="popup" onclick="window.open('{{ asset('Consent-student-general.pdf') }}', 'popup','width=600'); return false;"><strong>this Consent Form</strong></a>. I have had the opportunity to ask, and I have received answers
+                                to, any questions I had regarding the study and the use and disclosure of information about me
+                                for the study. I agree to take part in this study as a research participant. By my signature I affirm
+                                that I have received a copy of this Consent form
+                            </p>
+                            <table>
+                                <tr>
+                                    <td><strong>I am willing to provide access to my submitted course work</strong></td>
+                                    <td><input type="radio" value="true" name="consent_course_work" required/><strong>Yes</strong></td>
+                                    <td><input type="radio" value="false" name="consent_course_work" required/><strong>No</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>I am willing to provide access to my course grades associated with the submitted work</strong></td>
+                                    <td><input type="radio" value="true"  name="consent_grades" required/><strong>Yes</strong></td>
+                                    <td><input type="radio" value="false" name="consent_grades" required/><strong>No</strong></td>
+                                </tr>
+                            </table>
+                            <br/>
+                            <p>Your decision to participate in this study will in no way impact your course grades, class
+                                standing, or your relationship with UBC.
+                            </p>
                         </div>
 
                         <div class="form-group">

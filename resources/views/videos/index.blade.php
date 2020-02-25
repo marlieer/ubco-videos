@@ -22,7 +22,7 @@
                         @if($v->searchQ == $s->search_q)
                             <td>
                                 <h4>{{ $v->title }}</h4>
-                                <div class="media-body" onclick="return confirm('Are you sure?')">
+                                <div class="media-body">
                                     {!! $v->embed !!}
                                 </div>
                                 <p class="video-data">
