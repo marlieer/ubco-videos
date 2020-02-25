@@ -64,7 +64,7 @@
                         <div class="form-group">
                             <label for="consent" class="col-md-4 control-label">By registering you agree to the
 
-                                <a href="{{ asset('storage/Consent-student-general.pdf') }}">Terms & Services</a>
+                                <a href="{{ asset('Consent-student-general.pdf') }}">Terms & Services</a>
                             </label>
 
                             <div class="col-md-6">
