@@ -18,7 +18,8 @@ class VideoController extends Controller
             $id = Auth::id();
             $videos = Video::join('recommendations','video.v_id','recommendations.v_id')
                 ->where('recommendations.u_id', $id)
-                ->get();
+                ->get()
+                ->sortByDesc('views');
 
             // if there are no recommendations, just retrieve videos
             if(sizeof($videos) == 0){
