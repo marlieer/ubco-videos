@@ -21,7 +21,7 @@ footer{
 .div-border{
     border-top: lightslategrey solid 1pt;
 }
-.highligh-button {
+.highlight-button {
     border: 1pt solid green;
 }
 
@@ -49,4 +49,8 @@ footer{
 }
 #div-videos-list{
 padding-top: 1em;
+}
+.form-group p {
+    padding: 1em;
+    text-align: center;
 }
