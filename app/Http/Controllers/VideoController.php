@@ -54,7 +54,7 @@ class VideoController extends Controller
             foreach ($videos as $v){
                 $v->addInfo();
             }
-            return view('videos.indexbytopic', compact('videos', 'id'));
+            return view('videos.indexbytopic', compact('videos', 'id', 'topic'));
         }
         else return redirect(route('login'));
     }

@@ -2,6 +2,8 @@
 @section('title', 'Video Resources')
 @section('h1', 'COSC 121 Video Resources')
 @section('content')
+    <a href="{{route('videos')}}">Back</a>
+    <h2>{{ $topic }}</h2>
     <script type="text/javascript" src="{{ URL::asset('js/buttons.js') }}"></script>
     <section>
         @foreach($videos as $v)

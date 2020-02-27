@@ -18,7 +18,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default fixed-top">
         <div class="container">
             <div class="navbar-header">
 
@@ -74,8 +74,14 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li> <a href="/videosbytopic/Skip List">Skip List</a></li>
-                                <li><a href="/videosbytopic/Depth First Search">Depth First Search</a></li>
+                                <li> <a href="/#Generics">Generics</a></li>
+                                <li><a href="/#Lists">Lists</a></li>
+                                <li><a href="/#Stacks">Stacks</a></li>
+                                <li><a href="/#Queue">Queues</a></li>
+                                <li><a href="/#Merge Sort">Merge Sort</a></li>
+                                <li><a href="/#Quick Sort">Quick Sort</a></li>
+                                <li><a href="/#Radix Sort">Radix Sort</a></li>
+                                <li><a href="/#Lambda Expressions">Lambda Expressions</a></li>
                             </ul>
                         </li>
                 </ul>

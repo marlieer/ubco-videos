@@ -3,13 +3,7 @@
 @section('h1', 'COSC 121 Video Resources')
 @section('content')
     <script type="text/javascript" src="{{ URL::asset('js/buttons.js') }}"></script>
-    <div class="container">
-        <p>Jump to: </p>
-        @foreach($searchList as $s)
-            <a class="list-inline" style="margin-right: 1.5em;" href="#{{$s->search_q}}">{{ $s->search_q }}</a>
-        @endforeach
-    </div>
-    <div id="div-videos-list">
+    <div>
         @foreach($searchList as $s)
             <div id="{{$s->search_q}}">
                 <h2>{{ $s->search_q }}</h2>
