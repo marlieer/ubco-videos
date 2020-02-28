@@ -15,6 +15,10 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
+    <!--Javascript -->
+    <script type="text/javascript" src="{{ URL::asset('js/buttons.js') }}"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 <div id="app">

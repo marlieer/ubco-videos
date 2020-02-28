@@ -2,7 +2,6 @@
 @section('title', 'Video Resources')
 @section('h1', 'COSC 121 Video Resources')
 @section('content')
-    <script type="text/javascript" src="{{ URL::asset('js/buttons.js') }}"></script>
     <div>
         @foreach($searchList as $s)
             <div id="{{$s->search_q}}">
@@ -27,9 +26,9 @@
                                     <strong>Classmates</strong> Likes: {{ $v->classLikes }} |
                                     Dislikes: {{ $v->classDislikes }}
                                 </p>
-                                <button id="like_{{$v->v_id}}" onclick="likeVideo('{{$v->v_id}}', '{{$id}}')" class="btn-like">Like</button>
-                                <button id="dislike_{{$v->v_id}}" onclick="dislikeVideo('{{$v->v_id}}', '{{$id}}')" class="btn-dislike">Dislike</button>
-                                <button id="save_{{$v->v_id}}" onclick="saveVideo('{{$v->v_id}}', '{{$id}}')" class="btn-save">Save</button>
+                                <button id="like_{{$v->v_id}}" onclick="likeVideo('{{$v->v_id}}', '{{$id}}')">Like</button>
+                                <button id="dislike_{{$v->v_id}}" onclick="dislikeVideo('{{$v->v_id}}', '{{$id}}')" >Dislike</button>
+                                <button id="save_{{$v->v_id}}" onclick="saveVideo('{{$v->v_id}}', '{{$id}}')">Save</button>
                             </td>
                         @endif
                     @endforeach

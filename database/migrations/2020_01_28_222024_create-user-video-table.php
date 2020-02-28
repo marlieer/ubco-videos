@@ -15,7 +15,7 @@ class CreateUserVideoTable extends Migration
             $table->integer('rating')->nullable();
             $table->boolean('is_saved')->nullable();
             $table->timestamp('created_at')->nullable();
-            $table->integer('rank')->nullable();
+            $table->float('rank')->nullable();
             $table->foreign('u_id')->references('id')
                 ->on('users')
                 ->onUpdate('cascade')

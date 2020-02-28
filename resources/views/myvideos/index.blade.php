@@ -20,8 +20,8 @@
                             Dislikes: {{ $v->classDislikes }}
                         </p>
                     </div>
-                    <button type="button" onclick="likeVideo('{{$v->v_id}}', '{{$v->u_id}}')" class="btn-like">Like</button>
-                    <button type="button" onclick="dislikeVideo('{{$v->v_id}}', '{{$v->u_id}}')" class="btn-dislike">Dislike</button>
+                    <button id="like_{{$v->v_id}}" onclick="likeVideo('{{$v->v_id}}', '{{$id}}')">Like</button>
+                    <button id="dislike_{{$v->v_id}}" onclick="dislikeVideo('{{$v->v_id}}', '{{$id}}')" >Dislike</button>
                     <form style="display:inline;" method="POST" action="/myvideos/{{ $v->id }}">
                         {{ method_field('DELETE') }}
                         {{ csrf_field() }}

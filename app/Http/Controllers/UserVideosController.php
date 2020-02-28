@@ -11,20 +11,23 @@ use App\Video;
 class UserVideosController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
         if(Auth::check())
         {
+            $id = Auth::id();
             $videos = Video::join('myvideos','video.v_id','=','myvideos.v_id')
                 ->where('myvideos.u_id', Auth::id())
                 ->where('is_saved', true)
                 ->select('video.title','video.views','video.likes',
                     'video.dislikes', 'video.v_id', 'video.url', 'myvideos.id', 'myvideos.u_id')
                 ->get();
+            if (sizeof($videos) == 0)
+                $request->session()->flash('success', "You have no saved videos");
             foreach ($videos as $v){
                 $v->addInfo();
             }
-            return view('myvideos.index', compact('videos'));
+            return view('myvideos.index', compact('videos', 'id'));
         }
         else return(view('auth.login'));
     }
@@ -37,17 +40,15 @@ class UserVideosController extends Controller
             'v_id'=> $request->v_id
         ]);
 
-        if($request->save){
+        if($request->save == false){
             $myvideo->saveVideo();
-//            $request->session()->flash('success', "Saved");
         }
+
         if($request->like) {
             $myvideo->like();
-//            $request->session()->flash('success', "Liked");
         }
         if($request->dislike) {
             $myvideo->dislike();
-//            $request->session()->flash('success', "Disliked");
         }
         $myvideo->save();
 

@@ -44,16 +44,23 @@ class VideoController extends Controller
     }
 
 
-    public function indexbytopic($topic){
+    public function indexbytopic($topic, $sortby = 'rank'){
         if (Auth::check())
         {
             $id = Auth::id();
-            $videos = Video::where('searchQ', $topic)
-                ->orderBy('views','desc')
+            $videos = Video::join('recommendations','video.v_id','recommendations.v_id')
+                ->where('searchQ', $topic)
+                ->where('recommendations.u_id', $id)
                 ->get();
+
             foreach ($videos as $v){
+                if ($v->rank == null)
+                    $v->rank = 0;
                 $v->addInfo();
             }
+
+            $videos->sortByDesc($sortby);
+
             return view('videos.indexbytopic', compact('videos', 'id', 'topic'));
         }
         else return redirect(route('login'));
