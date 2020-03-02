@@ -16,6 +16,10 @@ $(document).ready(function()
     }
 
 
+    function onYouTubePlayerReady(){
+        alert("ready youtube");
+    }
+
     $(".media-body").click(function(e) {
         alert("here");
         let type = 'POST';

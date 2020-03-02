@@ -11,6 +11,14 @@ h2{
 }
 h3{
     color: #4D4847;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+h4 {
+    color: #4D4847;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*color: red;*/
 }
 
 footer{
