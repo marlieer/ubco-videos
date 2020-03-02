@@ -21,7 +21,7 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
-<div id="app">
+<div id="app" class="fixed-top sticky-top">
     <nav class="navbar navbar-default fixed-top">
         <div class="container">
             <div class="navbar-header">
