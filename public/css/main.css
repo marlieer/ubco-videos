@@ -14,10 +14,6 @@ h3{
 }
 h4 {
     color: #4D4847;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 300px;
-    /*color: red;*/
 }
 
 footer{
@@ -53,6 +49,12 @@ footer{
 }
 .video-data {
     font-size: 0.9em;
+}
+.video-title-h4 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 300px;
 }
 .form-group p {
     padding: 1em;

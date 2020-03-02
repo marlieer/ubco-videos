@@ -17,6 +17,7 @@ Route::get('/managedeleted', 'VideoController@manageDeleted')->name('videos.mana
 Route::delete('/videos/{video}', 'VideoController@destroy');
 Route::post('/videos/restore/{video}', 'VideoController@restore');
 Route::get('/videosbytopic/{topic}', 'VideoController@indexbytopic');
+Route::get('/videosbytopic/{topic}/{sortby}', 'VideoController@indexbytopic');
 Route::post('count', 'VideoController@count');
 Auth::routes();
 

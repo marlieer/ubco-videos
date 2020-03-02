@@ -6,8 +6,8 @@
 
         <a href="{{route('videos')}}">Back</a>
         <p>Sort By:
-            <input id="sort-by-recommended" type="radio" name="sortBy" value="recommended" checked="true"/>Recommended
-            <input id="sort-by-views" href="/videosbytopic/{{$topic}}" type="radio" name="sortBy" value="views"/>YouTube Views
+            <a href="/videosbytopic/{{$topic}}/rank">Recommended</a>
+            <a href="/videosbytopic/{{$topic}}/views">YouTube Views</a>
 
         </p>
         <h2 id="topic">{{ $topic }}</h2>
@@ -15,7 +15,7 @@
         <section>
             @foreach($videos as $v)
                 <div class="col-md-4 container">
-                    <h4>{{ $v->title }}</h4>
+                    <h4 class="video-title-h4">{{ $v->title }}</h4>
                     <div class="media-body">
                         {!! $v->embed !!}
                     </div>

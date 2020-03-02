@@ -1,6 +1,7 @@
 $(document).ready(function()
 {
     function ajaxCall(type, url, data, success) {
+        alert("called");
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -15,21 +16,15 @@ $(document).ready(function()
         });
     }
 
-
-    function onYouTubePlayerReady(){
-        alert("ready youtube");
-    }
-
-    $(".media-body").click(function(e) {
-        alert("here");
-        let type = 'POST';
-        let url = '/count';
-        let data = {
-            v_id: v_id,
-        };
-
-        // ajaxCall(type, url, data);
-    });
+    // $(".media-body").click(function(e) {
+    //     let type = 'POST';
+    //     let url = '/count';
+    //     let data = {
+    //         v_id: v_id,
+    //     };
+    //
+    //     // ajaxCall(type, url, data);
+    // });
 
 
     $(".save").click(function(e) {
@@ -108,13 +103,17 @@ $(document).ready(function()
     // $("#sort-by-views").click(function() {
     //     let topic = $("#topic").html();
     //     let type = 'GET';
-    //     let url = '/';
+    //     let url = '/videosbytopicAPI/' + topic;
     //     let data = {
     //         topic: topic,
     //         sortBy: 'views'
     //     };
     //
-    //     ajaxCall(type, url, data);
+    //     let success = function (data) {
+    //         alert(data);
+    //     };
+    //     alert("hit");
+    //     ajaxCall(type, url, data, success);
     //
     // });
 });
