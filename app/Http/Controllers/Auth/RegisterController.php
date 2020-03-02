@@ -51,8 +51,6 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'consent_course_work' => 'required',
-            'consent_grades' => 'required',
         ]);
     }
 
@@ -67,9 +65,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-            'consent_course_work' => $data['consent_course_work'],
-            'consent_grades' => $data['consent_grades'],
+            'password' => bcrypt($data['password'])
         ]);
     }
 }
