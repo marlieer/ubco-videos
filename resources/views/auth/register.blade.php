@@ -12,7 +12,7 @@
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <p>
-                                Please complete small survey located <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_0HZ8YhHzCqwIdyl" target="_blank"><strong>Here</strong></a>
+                                Please complete consent form before registering <a href="https://ubc.ca1.qualtrics.com/jfe/form/SV_0HZ8YhHzCqwIdyl" target="_blank"><strong>Here</strong></a>
                             </p>
                             <label for="name" class="col-md-4 control-label">Name</label>
 
