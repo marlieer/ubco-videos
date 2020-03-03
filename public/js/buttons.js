@@ -15,17 +15,6 @@ $(document).ready(function()
         });
     }
 
-    // $(".media-body").click(function(e) {
-    //     let type = 'POST';
-    //     let url = '/count';
-    //     let data = {
-    //         v_id: v_id,
-    //     };
-    //
-    //     // ajaxCall(type, url, data);
-    // });
-
-
     $(".save").click(function(e) {
         let user = e.target.attributes['user'].value;
         let video = e.target.attributes['video'].value;
@@ -86,33 +75,4 @@ $(document).ready(function()
         ajaxCall(type, url, data, success);
     });
 
-    // $("#sort-by-recommended").click(function() {
-    //     let topic = $("#topic").html();
-    //     let type = 'GET';
-    //     let url = '/videosbytopic/' + topic;
-    //     let data = {
-    //         topic: topic,
-    //         sortBy: 'rank'
-    //     };
-    //
-    //     ajaxCall(type, url, data);
-    //
-    // });
-
-    // $("#sort-by-views").click(function() {
-    //     let topic = $("#topic").html();
-    //     let type = 'GET';
-    //     let url = '/videosbytopicAPI/' + topic;
-    //     let data = {
-    //         topic: topic,
-    //         sortBy: 'views'
-    //     };
-    //
-    //     let success = function (data) {
-    //         alert(data);
-    //     };
-    //     alert("hit");
-    //     ajaxCall(type, url, data, success);
-    //
-    // });
 });
