@@ -48,16 +48,23 @@ class VideoController extends Controller
         if (Auth::check())
         {
             $id = Auth::id();
-            $videos = Video::leftjoin('recommendations','video.v_id','recommendations.v_id')
+            $videos = Video::join('recommendations','video.v_id','recommendations.v_id')
                 ->where('searchQ', $topic)
                 ->where('recommendations.u_id', $id)
                 ->get()
                 ->sortByDesc($sortby);
 
-            foreach ($videos as $v){
-                if ($v->rank == null)
-                    $v->rank = 0;
-                $v->addInfo();
+            // if there are no recommendations, just retrieve videos
+            if(sizeof($videos) == 0){
+                $videos = Video::get()->sortByDesc('views');
+            }
+
+            else {
+                foreach ($videos as $v){
+                    if ($v->rank == null)
+                        $v->rank = 0;
+                    $v->addInfo();
+                }
             }
 
             return view('videos.indexbytopic', compact('videos', 'id', 'topic'));
