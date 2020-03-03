@@ -53,7 +53,7 @@ class UserVideosController extends Controller
         $myvideo->save();
 
 
-        return redirect()->route('videos');
+//        return redirect()->route('videos');
     }
 
 

@@ -6,7 +6,7 @@
         @foreach($searchList as $s)
             <div id="{{$s->search_q}}">
                 <h2>{{ $s->search_q }}</h2>
-                <a href="/videosbytopic/{{$s->search_q}}">View All</a>
+                <a href="/videosbytopic/{{$s->search_q}}/rank">View All</a>
                 <a href="#" style="display: inline; margin-left: 2em;">Back to Top</a>
             </div>
             <table class="table table-hover videos-list-table">
