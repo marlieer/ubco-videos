@@ -1,7 +1,6 @@
 $(document).ready(function()
 {
     function ajaxCall(type, url, data, success) {
-        alert("called");
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

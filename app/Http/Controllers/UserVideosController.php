@@ -40,7 +40,7 @@ class UserVideosController extends Controller
             'v_id'=> $request->v_id
         ]);
 
-        if($request->save == false){
+        if($request->save){
             $myvideo->saveVideo();
         }
 

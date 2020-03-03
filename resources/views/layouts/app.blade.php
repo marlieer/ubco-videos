@@ -120,7 +120,7 @@
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
 
-<div class="container-fluid flash-message">
+<div class="section container-fluid flash-message">
     @if( Session::has("success") )
         <div class="alert alert-success alert-block" role="alert">
             <button class="close" data-dismiss="alert"></button>
@@ -136,6 +136,6 @@
     @endif
     <br>
 </div>
-@yield('content')
+    @yield('content')
 </body>
 </html>
