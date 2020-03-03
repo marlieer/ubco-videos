@@ -56,7 +56,9 @@ class VideoController extends Controller
 
             // if there are no recommendations, just retrieve videos
             if(sizeof($videos) == 0){
-                $videos = Video::get()->sortByDesc('views');
+                $videos = Video::get()
+                    ->where('searchQ', $topic)
+                    ->sortByDesc('views');
             }
 
             foreach ($videos as $v){
