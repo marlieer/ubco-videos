@@ -19,7 +19,7 @@ $(document).ready(function()
         let user = e.target.attributes['user'].value;
         let video = e.target.attributes['video'].value;
         let type = 'POST';
-        let url = '/myvideos/';
+        let url = '/myvideos';
         let data = {
             v_id: video,
             u_id: user,
@@ -38,7 +38,7 @@ $(document).ready(function()
         let user = e.target.attributes['user'].value;
         let video = e.target.attributes['video'].value;
         let type = 'POST';
-        let url = '/myvideos/';
+        let url = '/myvideos';
         let data = {
             v_id: video,
             u_id: user,
@@ -59,7 +59,7 @@ $(document).ready(function()
         let user = e.target.attributes['user'].value;
         let video = e.target.attributes['video'].value;
         let type = 'POST';
-        let url = '/myvideos/';
+        let url = '/myvideos';
         let data = {
             v_id: video,
             u_id: user,
