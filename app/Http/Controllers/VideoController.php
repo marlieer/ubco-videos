@@ -48,7 +48,7 @@ class VideoController extends Controller
         if (Auth::check())
         {
             $id = Auth::id();
-            $videos = Video::join('recommendations','video.v_id','recommendations.v_id')
+            $videos = Video::leftjoin('recommendations','video.v_id','recommendations.v_id')
                 ->where('searchQ', $topic)
                 ->where('recommendations.u_id', $id)
                 ->get()
