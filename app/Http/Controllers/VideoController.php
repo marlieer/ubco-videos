@@ -29,7 +29,7 @@ class VideoController extends Controller
             foreach ($videos as $v)
                 $v->addInfo();
 
-            $searchList = SearchList::get();
+            $searchList = SearchList::get()->sortBy('s_id');
             return view('videos.index', compact('videos','searchList','id'));
         }
         else return redirect(route('login'));
