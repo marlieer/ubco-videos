@@ -59,12 +59,10 @@ class VideoController extends Controller
                 $videos = Video::get()->sortByDesc('views');
             }
 
-            else {
-                foreach ($videos as $v){
-                    if ($v->rank == null)
-                        $v->rank = 0;
-                    $v->addInfo();
-                }
+            foreach ($videos as $v){
+                if ($v->rank == null)
+                    $v->rank = 0;
+                $v->addInfo();
             }
 
             return view('videos.indexbytopic', compact('videos', 'id', 'topic'));
