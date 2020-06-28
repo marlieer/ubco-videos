@@ -3,6 +3,8 @@
 ## Undergraduate - University of British Columbia
 
 The backend github repo can be found at https://github.com/marlieer/Python-Webcrawler
+The complete Thesis can be found in the pdf titled "Honours in Computer Science"
+
 ### Abstract
 
 This study was conducted to develop a personalized recommender system for YouTube videos. The system initially collects and ranks YouTube videos on educational classroom topics and displays them to students. 
