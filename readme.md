@@ -1,51 +1,28 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Honours in Computer Science
+## Marlie Russell
+## Undergraduate - University of British Columbia
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+The backend github repo can be found at https://github.com/marlieer/Python-Webcrawler
+### Abstract
 
-## About Laravel
+This study was conducted to develop a personalized recommender system for YouTube videos. The system initially collects and ranks YouTube videos on educational classroom topics and displays them to students. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Once students using the system interact with the displayed videos by liking and disliking the videos, the system combines the user history with collaborative filtering to produce a personalized list of recommended YouTube videos. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The system is meant to be a supplementary tool for students to use to help them learn important classroom concepts. The system was tested out on a first year computer science course. However, the users did not interact very much with the system and few gave feedback. Despite that, the feedback was mostly positive, and we believe that this project has valuable opportunity for growth. 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Little work has been done for developing personalized recommender systems for supplementary education. This research project begins the groundwork of developing a tool that could have an incredible positive impact on the education of the student population.
 
-## Learning Laravel
+### Conclusion
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+Through this research project, I learned the importance and application of personalized recommender systems and how they can be applied to education. Recommender systems are common in E-Commerce and media services, but there is little research done for using recommender systems in education. Although this project did not have the user interaction and user feedback that we desired, it was still a valuable learning experience in researching and developing a personalized YouTube recommender system.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Furthermore, this was a valuable opportunity to spearhead a research project for UBC focused on educational recommender systems for supplementary learning. The tool we developed can be adapted and used for future courses for online and remote support to students’ learning. This is especially true with respect to the migration of education to online platforms in light of the COVID-19 global pandemic. The video recommender system can be an invaluable tool for UBC.
 
-## Laravel Sponsors
+### Future Work
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+Based on my experience with this project, I had hoped to implement tracking user logins and views on videos. However, due to time constraints, I was not able to do so. Future work should be done with more detailed tracking of user activity. 
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+Future work should also be done in expanding the website. Currently, the website is specific to COSC 121 at UBC Okanagan and only has topics from the last half of the semester. The website could be scaled to be a multi-page site with users split into instructors and students. Instructors would be able to sign up and create a recommendation page for their class on topics of their choice. Students would use their class’s page to access video resources. An instructor should be able to create multiple course pages. Administrators would also be required for managing instructors (deleting if necessary) and managing course pages.
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
