@@ -3,6 +3,9 @@
 ## Undergraduate - University of British Columbia
 
 The backend github repo can be found at https://github.com/marlieer/Python-Webcrawler
+
+The web application can be found at http://ubco-videos.herokuapp.com
+
 The complete Thesis can be found in the pdf titled "Honours in Computer Science"
 
 ### Abstract
